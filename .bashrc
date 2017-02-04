@@ -25,8 +25,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Try to load aliases from alias file
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.config/bash/.bash_aliases ]; then
+  . ~/.config/bash/.bash_aliases
 fi
 
 export NVM_DIR="/home/ltorroba/.nvm"
