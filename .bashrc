@@ -28,3 +28,8 @@ alias egrep='egrep --color=auto'
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+export NVM_DIR="/home/ltorroba/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
