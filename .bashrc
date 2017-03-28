@@ -29,6 +29,10 @@ if [ -f ~/.config/bash/.bash_aliases ]; then
   . ~/.config/bash/.bash_aliases
 fi
 
+# Source packages
+source bashmarks/bashmarks.sh
+
+# Setup PATH
 export NVM_DIR="/home/ltorroba/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
