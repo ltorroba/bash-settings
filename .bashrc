@@ -1,8 +1,6 @@
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-
 /usr/bin/setxkbmap -option "caps:swapescape"
-
 # Terminal colors
 export TERM=xterm-256color
 eval `dircolors ~/.dir_colors/dircolors`
@@ -37,3 +35,9 @@ export NVM_DIR="/home/ltorroba/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/bin
