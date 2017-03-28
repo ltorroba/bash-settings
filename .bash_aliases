@@ -5,6 +5,11 @@ alias gp='git push'
 alias ga='git add'
 alias gap='git add -p'
 alias gs='git status'
+alias gd='git diff'
+
+# Copying
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
 
 # Other
 alias tmux="TERM=screen-256color-bce tmux"
