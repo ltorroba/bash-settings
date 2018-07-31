@@ -1,3 +1,9 @@
 [submodule "bashmarks"]
 	path = bashmarks
 	url = git@github.com:huyng/bashmarks.git
+[submodule "solarized"]
+	path = solarized
+	url = git@github.com:altercation/solarized.git
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts
