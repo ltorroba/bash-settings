@@ -22,15 +22,15 @@ _Platform-specific setup_.
 Follow the correct instructions according to the target platform.
 
 ### Linux
-_TO DO_
-
-### OS X
-1. Download and install _iTerm 2_
-2. Configure the default profile in iTerm 2 so that the colour scheme is Solarized Dark and it uses a Powerline-patched font.
+1. Configure the default profile in iTerm 2 so that the colour scheme is Solarized Dark and it uses a Powerline-patched font.
   Some tweaking of font sizes and faces might be required to find a good combination.
-3. Create a `~/.bash_profile` that sources `bashrc.sh`, e.g.:
+2. Create a `~/.bash_profile` that sources `bashrc.sh`, e.g.:
   ```
   source ~/.config/bash-settings/bashrc.sh
   ```
   _NOTE: This is better than making a symlink as some installation script (e.g.: miniconda) automatically append stuff to PATH
   by adding it to the bash profile file._
+
+### OS X
+1. Download and install _iTerm 2_
+2. Follow Linux instructions.
