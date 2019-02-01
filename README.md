@@ -11,6 +11,7 @@ _Platform-specific setup_.
   git submodule init
   git submodule update
   ```
+  
 3. Install the Powerline-patched fonts:
   ```
   cd fonts/
@@ -30,6 +31,7 @@ Follow the correct instructions according to the target platform.
   ```
   _NOTE: This is better than making a symlink as some installation script (e.g.: miniconda) automatically append stuff to PATH
   by adding it to the bash profile file._
+  
 3. Setup symlinks:
   ```
   ln -s ~/.config/bash-settings/inputrc.sh .inputrc
