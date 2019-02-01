@@ -30,6 +30,11 @@ Follow the correct instructions according to the target platform.
   ```
   _NOTE: This is better than making a symlink as some installation script (e.g.: miniconda) automatically append stuff to PATH
   by adding it to the bash profile file._
+3. Setup symlinks:
+  ```
+  ln -s ~/.config/bash-settings/inputrc.sh .inputrc
+  ln -s ~/.config/bash-settings/tmux.conf .tmux.conf
+  ```
 
 ### OS X
 1. Download and install _iTerm 2_
