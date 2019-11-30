@@ -26,3 +26,6 @@ if [ ${machine} == Linux ]; then
 elif [ ${machine} == Mac ]; then
 	alias ls='ls -G'
 fi
+
+# Slurm cleanup
+alias scleanup="rm slurm-*.out machine.file.*"
