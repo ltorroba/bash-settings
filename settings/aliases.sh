@@ -14,7 +14,7 @@ alias gd='git diff'
 alias grep='grep --color=auto'
 
 # Correct colors on tmux
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=screen-256color tmux"
 
 # Copying
 if [ ${machine} == Linux ]; then

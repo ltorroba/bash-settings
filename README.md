@@ -23,21 +23,38 @@ _Platform-specific setup_.
 Follow the correct instructions according to the target platform.
 
 ### Linux
-1. Configure the default profile in iTerm 2 so that the colour scheme is Solarized Dark and it uses a Powerline-patched font.
-  Some tweaking of font sizes and faces might be required to find a good combination.
-2. Create a `~/.bash_profile` that sources `bashrc.sh`, e.g.:
+1. Setup nvim. Easiest way to do this is to download the [universal appimage](https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package) file and add an alias to `.bash_profile`. For example:
   ```
-  source ~/.config/bash-settings/bashrc.sh
+  cd ~/.config
+  curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+  chmod u+x nvim.appimage
+  echo "alias nvim='~/.config/nvim.appimage'" >> ~/.config/.bash_profile
+  ```
+
+2. Setup neovim settings according to other repository.
+
+### OS X
+1. Download and install _iTerm 2_
+2. Configure the default profile in iTerm 2 so that the colour scheme is Solarized Dark and it uses a Powerline-patched font.
+  Some tweaking of font sizes and faces might be required to find a good combination.
+3. Install neovim
+  ```
+  brew install neovim
+  ```
+2. Setup neovim settings according to other repository.
+3. Follow general instructions.
+
+### General
+
+1. Create a `~/.bash_profile` that sources `bashrc.sh`.
+  ```
+  echo "source ~/.config/bash-settings/bashrc.sh" >> ~/.bash_profile
   ```
   _NOTE: This is better than making a symlink as some installation script (e.g.: miniconda) automatically append stuff to PATH
   by adding it to the bash profile file._
   
-3. Setup symlinks:
+2. Setup symlinks:
   ```
   ln -s ~/.config/bash-settings/inputrc.sh .inputrc
   ln -s ~/.config/bash-settings/tmux.conf .tmux.conf
   ```
-
-### OS X
-1. Download and install _iTerm 2_
-2. Follow Linux instructions.
