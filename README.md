@@ -33,6 +33,8 @@ Follow the correct instructions according to the target platform.
 
 2. Setup neovim settings according to other repository.
 
+3. Follow general instructions.
+
 ### OS X
 1. Download and install _iTerm 2_
 2. Configure the default profile in iTerm 2 so that the colour scheme is Solarized Dark and it uses a Powerline-patched font.
