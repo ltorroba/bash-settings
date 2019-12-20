@@ -28,7 +28,7 @@ Follow the correct instructions according to the target platform.
   cd ~/.config
   curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
   chmod u+x nvim.appimage
-  echo "alias nvim='~/.config/nvim.appimage'" >> ~/.config/.bash_profile
+  echo "alias nvim='~/.config/nvim.appimage'" >> ~/.bash_profile
   ```
 
 2. Setup neovim settings according to other repository.
@@ -57,6 +57,6 @@ Follow the correct instructions according to the target platform.
   
 2. Setup symlinks:
   ```
-  ln -s ~/.config/bash-settings/inputrc.sh .inputrc
-  ln -s ~/.config/bash-settings/tmux.conf .tmux.conf
+  ln -s ~/.config/bash-settings/inputrc.sh ~/.inputrc
+  ln -s ~/.config/bash-settings/tmux.conf ~/.tmux.conf
   ```
