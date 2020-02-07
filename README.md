@@ -23,7 +23,7 @@ _Platform-specific setup_.
 Follow the correct instructions according to the target platform.
 
 ### Linux
-1. Setup nvim. Easiest way to do this is to download the [universal appimage](https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package) file and add an alias to `.bash_profile`. For example:
+1. Setup nvim. Easiest way to do this is to download the [universal appimage](https://github.com/neovim/neovim/releases/download/stable/nvim.appimage) file and add an alias to `.bash_profile`. For example:
   ```
   cd ~/.config
   curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
