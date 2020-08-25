@@ -31,7 +31,7 @@ Follow the correct instructions according to the target platform.
   echo "alias nvim='~/.config/nvim.appimage'" >> ~/.bash_profile
   ```
 
-2. Setup neovim settings according to other repository.
+2. Setup neovim settings according to [other repository](https://github.com/ltorroba/nvim-settings).
 
 3. Follow general instructions.
 
@@ -48,6 +48,7 @@ Follow the correct instructions according to the target platform.
 
 ### General
 
+0. (Optional) If the terminal is being funky (e.g. pressing the arrow keys does not scroll through history), you are probably using `sh` instead of `bash`. Change the login shell to the latter by running `chsh -s /bin/bash`.
 1. Create a `~/.bash_profile` that sources `bashrc.sh`.
   ```
   echo "source ~/.config/bash-settings/bashrc.sh" >> ~/.bash_profile
