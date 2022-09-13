@@ -46,6 +46,17 @@ Follow the correct instructions according to the target platform.
 2. Setup neovim settings according to other repository.
 3. Follow general instructions.
 
+### Windows Subsystem for Linux (WSL)
+
+1. Install neovim
+  ```
+  sudo add-apt-repository ppa:neovim-ppa/unstable
+  sudo apt-get update
+  sudo apt-get install neovim
+  ```
+2. Setup neovim settings according to other repository
+3. Follow general instructions
+
 ### General
 
 0. (Optional) If the terminal is being funky (e.g. pressing the arrow keys does not scroll through history), you are probably using `sh` instead of `bash`. Change the login shell to the latter by running `chsh -s /bin/bash`.
