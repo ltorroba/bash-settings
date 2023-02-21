@@ -28,7 +28,9 @@ Follow the correct instructions according to the target platform.
   cd ~/.config
   curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
   chmod u+x nvim.appimage
-  echo "alias nvim='~/.config/nvim.appimage'" >> ~/.bash_profile
+  mkdir bin
+  mv nvim.appimage bin/nvim
+  echo "export PATH=~/.config/bin:$PATH" >> ~/.bash_profile
   ```
 
 2. Setup neovim settings according to [other repository](https://github.com/ltorroba/nvim-settings).
