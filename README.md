@@ -62,3 +62,10 @@ Follow the correct instructions according to the target platform.
   ln -s ~/.config/bash-settings/inputrc.sh ~/.inputrc
   ln -s ~/.config/bash-settings/tmux.conf ~/.tmux.conf
   ```
+
+3. To use Github copilot, you'll need to ensure node is installed. Easiest way is probably to do
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install lts/*
+```
+Then you can run `nvm use default` when you create a new tab that you want to run copilot on.
