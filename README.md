@@ -28,7 +28,9 @@ Follow the correct instructions according to the target platform.
   cd ~/.config
   curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
   chmod u+x nvim.appimage
-  echo "alias nvim='~/.config/nvim.appimage'" >> ~/.bash_profile
+  mkdir bin
+  mv nvim.appimage bin/nvim
+  echo "export PATH=~/.config/bin:$PATH" >> ~/.bash_profile
   ```
 
 2. Setup neovim settings according to [other repository](https://github.com/ltorroba/nvim-settings).
@@ -46,12 +48,23 @@ Follow the correct instructions according to the target platform.
 2. Setup neovim settings according to other repository.
 3. Follow general instructions.
 
+### Windows Subsystem for Linux (WSL)
+
+1. Install neovim
+  ```
+  sudo add-apt-repository ppa:neovim-ppa/unstable
+  sudo apt-get update
+  sudo apt-get install neovim
+  ```
+2. Setup neovim settings according to other repository
+3. Follow general instructions
+
 ### General
 
 0. (Optional) If the terminal is being funky (e.g. pressing the arrow keys does not scroll through history), you are probably using `sh` instead of `bash`. Change the login shell to the latter by running `chsh -s /bin/bash`.
 1. Create a `~/.bash_profile` that sources `bashrc.sh`.
   ```
-  echo "source ~/.config/bash-settings/bashrc.sh" >> ~/.bash_profile
+  echo "source ~/.config/bash-settings/bashrc.sh" >> ~/.bashrc
   echo "source ~/.bashrc" >> ~/.bash_profile
   ```
   _NOTE: This is better than making a symlink as some installation script (e.g.: miniconda) automatically append stuff to PATH
