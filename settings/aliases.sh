@@ -17,13 +17,13 @@ alias grep='grep --color=auto'
 alias tmux="TERM=screen-256color tmux"
 
 # Copying
-if [ ${machine} == Linux ]; then
+if [[ "${machine}" == "Linux" ]]; then
 	alias ls='ls --color=auto'
 
 	# Simulate pbcopy/pbpaste behaviour on Linux
 	alias pbcopy='xsel --clipboard --input'
 	alias pbpaste='xsel --clipboard --output'
-elif [ ${machine} == Mac ]; then
+elif [[ "${machine}" == "Mac" ]]; then
 	alias ls='ls -G'
 fi
 

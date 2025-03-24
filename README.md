@@ -72,7 +72,6 @@ Follow the correct instructions according to the target platform.
   
 2. Setup symlinks:
   ```
-  ln -s ~/.config/bash-settings/inputrc.sh ~/.inputrc
   ln -s ~/.config/bash-settings/tmux.conf ~/.tmux.conf
   ```
 
